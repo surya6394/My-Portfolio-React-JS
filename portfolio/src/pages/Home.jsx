@@ -1,15 +1,15 @@
 import React from "react";
 import SocialIcons from "../component/SocialIcons";
 import Surya from "../images/surya.png";
-import * as FileSaver from "file-saver";
+import FileSaver from "file-saver";
 import BarChart from "../component/Comp/BarChart";
 
 
 function Home (){
   const saveFile = () => {
     FileSaver.saveAs(
-      process.env.PUBLIC_URL + "/resource/Jyoti-CV-exp-2.pdf",
-      "MyCV.pdf"
+      process.env.PUBLIC_URL + "/resource/Surya-resume.pdf",
+      "Surya-Pratap-CV.pdf"
     );
   };
 
