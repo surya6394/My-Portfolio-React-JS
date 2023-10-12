@@ -75,7 +75,7 @@ function Home (){
 
       <div className="App">
       <h1>Bar Chart in React using CanvasJS</h1>
-      <BarChart dataPoints={dataPoints} />
+      <BarChart />
     </div>
 
       <div>

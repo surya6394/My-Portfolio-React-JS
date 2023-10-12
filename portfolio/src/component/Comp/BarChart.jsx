@@ -1,31 +1,34 @@
-import React, { useEffect } from 'react';
-import CanvasJSReact from './canvasjs.react';
+import React from 'react';
+import CanvasJSReact from '@canvasjs/react-charts';
 
-// const CanvasJS = CanvasJSReact.CanvasJS;
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-const BarChart = (props) => {
-  const options = {
-    title: {
-      text: 'Bar Chart Example',
-    },
-    data: [
-      {
-        type: 'column',
-        dataPoints: props.dataPoints,
-      },
-    ],
-  };
+const BarChart = () => {
+    const options = {
+        title: {
+            text: "Basic Column Chart"
+        },
+        data: [
+            {
+                type: "column",
+                dataPoints: [
+                    { label: "React JS",  y: 100  },
+                    { label: "JavaScript", y: 15  },
+                    { label: "Java", y: 25  },
+                    { label: "BootStrap",  y: 30  },
+                    { label: "Tailwind",  y: 80  },
+                    { label: "SQL",  y: 28  },
+                    { label: "Spring Framework",  y: 28  }
+                ]
+            }
+        ]
+    };
 
-  useEffect(() => {
-    // Optionally, you can add code here to update the chart when props.dataPoints change.
-  }, [props.dataPoints]);
-
-  return (
-    <div>
-      <CanvasJSChart options={options} />
-    </div>
-  );
+    return (
+        <div>
+            <CanvasJSChart options={options} />
+        </div>
+    );
 };
 
 export default BarChart;
