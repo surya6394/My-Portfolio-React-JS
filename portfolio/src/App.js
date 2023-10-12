@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
-import { Home } from './pages/Home';
+import Home  from './pages/Home';
 import Header from './component/Header';
 import Page404 from './pages/Page404';
 

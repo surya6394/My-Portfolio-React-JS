@@ -1,22 +1,22 @@
 import React from 'react'
-import { AiFillFacebook, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineWhatsApp } from 'react-icons/ai'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function SocialIcons() {
     return (
         <>
-            <div className='flex text-3xl gap-2'>
+            <div className='flex text-2xl gap-5'>
                 <a href='' className='text-whatsapp-clr'>
-                    <AiOutlineWhatsApp />
+                    <FaWhatsapp />
                 </a>
                 <a href='' className='text-linkedin-clr'>
-                    <AiOutlineLinkedin />
+                    <FaLinkedinIn />
                 </a>
                 <a href='' className='text-facebook-clr'>
-                    <AiFillFacebook />
+                    <FaFacebookF />
                 </a>
                 <a href='' className='text-instagram-clr'>
-                    <AiOutlineInstagram />
+                    <FaInstagram />
                 </a>
             </div>
         </>
