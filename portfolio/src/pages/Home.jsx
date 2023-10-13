@@ -58,12 +58,12 @@ function Home (){
       </div>
       </section>
 
-      <div className="items-center justify-center px-52">
+      <div className="md:mt-0 mt-72">
         <div className="flex justify-center items-center">
           <h1 className="text-4xl font-bold py-10 mt-5">About Me</h1>
         </div>
-        <div className="flex ">
-          <p className="text-2xl font-mono text-center pb-10">I'm a passionate frontend developer with a keen eye for design and
+        <div className="flex justify-center items-center">
+          <p className="md:text-2xl font-mono text-center pb-10 md:w-2/3">I'm a passionate frontend developer with a keen eye for design and
               a knack for crafting seamless user experiences. My journey into
               the world of web development began with a fascination for turning
               ideas into interactive digital realities.I'm a passionate frontend developer with a keen eye for design and
@@ -73,40 +73,22 @@ function Home (){
         </div>
       </div>
 
-      <div className="App">
-      <h1>Bar Chart in React using CanvasJS</h1>
+<div className="flex items-center justify-center">
+<hr className="w-5/6 border-1 border-gray-700" />
+</div>
+
+      <div className="md:flex mt-16">
+      <div className="flex justify-center items-center w-1/3">
+        <div className="font-bold">
+        <h1>Hii</h1>
+        </div>
+      </div>
+      <div className="md:w-7/12">
       <BarChart />
+      </div>
+      
     </div>
 
-      <div>
-        <div>
-        <div className="flex">
-        <div className="mb-6 h-28 items-end pb-5 w-1/2 mx-10 bg-neutral-200 dark:bg-neutral-600">
-          <div>
-          <h1 className="text-2xl">React JS</h1>
-          </div>
-          <div className="flex">
-          <div className="justify-center h-6 ml-5 mr-2 bg-green-500" style={{ width: "80%" }}>
-          </div>
-          <div>
-            <div>
-            <h1 className="font-bold">80%</h1>
-            </div>
-          </div>
-          </div>
-      </div>
-      <div className="flex items-end mb-6 h-28 pb-5 w-1/2 mx-10 bg-neutral-200 dark:bg-red-600">
-          <div className="justify-center h-6 mx-5 bg-green-500" style={{ width: "75%" }}></div>
-      </div>
-        </div>
-      <div className="mb-6 h-1 w-full bg-neutral-200 dark:bg-neutral-600">
-          <div className="h-1 bg-yellow-500" style={{ width: "75%" }}></div>
-      </div>
-      <div className="h-1 w-full bg-neutral-200 dark:bg-neutral-600">
-          <div className="h-1 bg-red-600" style={{ width: "100%" }}></div>
-      </div>
-        </div>
-      </div>
     </>
   );
 };

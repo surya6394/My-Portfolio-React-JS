@@ -45,7 +45,7 @@ function Header() {
           <div
             className={`md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 ${
               isMenuOpen
-                ? "fixed pl-12 top-[28%] w-full h-52"
+                ? "fixed pl-12 top-[23%] w-full h-52"
                 : "hidden md:block"
             } md:w-auto w-full flex items-center px-5 transition-all duration-300 ease-in-out`}
           >

@@ -8,6 +8,7 @@ const BarChart = () => {
         title: {
             text: "Basic Column Chart"
         },
+        
         data: [
             {
                 type: "column",
