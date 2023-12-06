@@ -94,7 +94,7 @@ function Header() {
           </div>
           <div className="flex items-center gap-6">
             <button className="bg-btnclr1 hover:bg-txt-clr text-txt-clr hover:text-btnclr1 px-4 py-2 rounded-full">
-              <Link className="no-underline  font-bold" to="/login">
+              <Link className="no-underline  font-bold" to="/signup">
                 Login
               </Link>
             </button>

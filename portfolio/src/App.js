@@ -8,6 +8,9 @@ import Contact from './pages/Contact';
 import Home  from './pages/Home';
 import Header from './component/Header';
 import Page404 from './pages/Page404';
+import SignUp from './component/pages/SignUp';
+import Service from './pages/Service';
+import Callback from './component/HooksExample/useCallback/Callback';
 
 function App() {
   return (
@@ -22,6 +25,10 @@ function App() {
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/*' element={<Page404/>} />
+        <Route path='/signup' element={<SignUp />}/>
+        <Route path='/services/' element={<Service/>}>
+          <Route path='callback' element={<Callback />} />
+        </Route>
       </Routes>
     </BrowserRouter>
     </>
