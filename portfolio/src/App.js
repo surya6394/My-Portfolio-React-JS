@@ -11,6 +11,7 @@ import Page404 from './pages/Page404';
 import SignUp from './component/pages/SignUp';
 import Service from './pages/Service';
 import Callback from './component/HooksExample/useCallback/Callback';
+import ParentComp from './component/HooksExample/React-Basic-Example/Props-example/ParentComp';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/services/' element={<Service/>}>
           <Route path='callback' element={<Callback />} />
+          <Route path='props' element={<ParentComp />} />
         </Route>
       </Routes>
     </BrowserRouter>
