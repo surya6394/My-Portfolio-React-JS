@@ -12,6 +12,8 @@ import SignUp from './component/pages/SignUp';
 import Service from './pages/Service';
 import Callback from './component/HooksExample/useCallback/Callback';
 import ParentComp from './component/HooksExample/React-Basic-Example/Props-example/ParentComp';
+import State from './component/HooksExample/React-Basic-Example/State-Example/state';
+import Notes from './component/HooksExample/React-Basic-Example/State-Example/Notes';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path='/services/' element={<Service/>}>
           <Route path='callback' element={<Callback />} />
           <Route path='props' element={<ParentComp />} />
+          <Route path='state-example-1' element={<State />} />
+          <Route path='state-example-2' element={<Notes />} />
         </Route>
       </Routes>
     </BrowserRouter>
